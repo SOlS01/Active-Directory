@@ -31,3 +31,24 @@ to delete an OU we need to enable the Advanced Feature (view > Advanced Feature)
 
 # Delegation >> 
 allows us to grant users specific privileges to perform advanced task on OU without needing a domain admin to step in. Right click on the OU and typing the person’s name who we want to give privilege. This method mostly used for IT support. 
+
+Always segregate the devices according to their use try to have different containers to separate them. 
+
+# Group policies >> 
+to configure a group policy we can use the group policy management on windows, first we create a group policy object then link it to the OU where we want to apply the policy by drag and drop. 
+
+# There are two methods/protocols for network authentication: 
+
+# Kerberos >> 
+it is ticket as proof of a previous authentication, key distribution centre KDC is in charge of creating Kerberos tickets on the network. The ticket granting ticket TGT allow the user to request additional ticket to access to service,  
+
+and  
+
+# NetNTLM >>
+with this protocol the user’s password or hash password never transmitted through the network for security. 
+
+# Tree >> when we got other branches in our company, but we don’t want the UK to be independent from US so we can create a tree. (one windows domain that share the same namespace) 
+
+# Forest >> when the union of several trees with different namespaces into the same network is known as a forest. 
+
+# Trust >> when the tree and forest in some points needs to share their file this domain is created under trust relationship. There is one way or two-way trust relationship.
